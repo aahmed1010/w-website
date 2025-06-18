@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      min-height: 100vh;
+      padding-top: 70px; /* Adjust to navbar height */
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: rgba(255, 255, 255, 0.18); /* semi-transparent white */
+      backdrop-filter: blur(8px);             /* frosted glass effect */
+      -webkit-backdrop-filter: blur(8px);     /* for Safari */
+      color: #fff;
+      box-shadow: none;
+      border: none;
+      transform: translateY(0);
+      text-shadow: none;
+    }
+    .navbar .nav-links a,
+    .navbar .logo,
+    .navbar .btn-primary.help-desk-btn {
+      color: #fff !important;
+      text-shadow: none;
+    }
+    .navbar .nav-links a:hover {
+      text-decoration: underline;
+    }
+    .nav-links {
+      display: flex !important;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .navbar .nav-links a {
+      color: #fff !important;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.15), 0 0 2px #000;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    /* No logo inversion, use the original logo */
+  </style>
+  <meta name="description" content="AI Solutions offering intelligent surveillance, real-time threat detection, and comprehensive security services for urban environments.">
+</head>
+
+<body>
+  <button class="show-navbar-btn" aria-label="Show Navigation" style="display:none;">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <rect y="6" width="28" height="3" rx="1.5" fill="#23264a" />
+      <rect y="13" width="28" height="3" rx="1.5" fill="#23264a" />
+      <rect y="20" width="28" height="3" rx="1.5" fill="#23264a" />
+    </svg>
+  </button>
+  <button id="backToTopBtn" aria-label="Back to Top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:99999;background:#2563eb;color:#fff;border:none;border-radius:50%;width:54px;height:54px;box-shadow:0 4px 16px rgba(24,28,58,0.18);font-size:2rem;cursor:pointer;transition:opacity 0.2s;align-items:center;justify-content:center;">
+    ↑
+  </button>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="AI Solutions Logo" class="site-logo" />
+      </a>
+      <div class="nav-links">
+        <a href="#company">Company</a>
+        <a href="#solution">Solution</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <a href="#help-desk" class="btn-primary help-desk-btn">Help Desk</a>
+      <button class="mobile-menu" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <section class="hero-main">
+    <div class="hero-content">
+      <h1>Empowering Enterprises with AI-Driven Intelligence</h1>
+      <p class="hero-desc">At Saudico Electronic Systems (SES), we transform organizations with cutting-edge Artificial Intelligence (AI), Data Analytics, and Digital Transformation solutions. Our expertise in Large Language Models (LLMs), Generative AI, Retrieval-Augmented Generation (RAG), and Agentic AI enables businesses and government entities to harness AI responsibly, securely, and at scale.<br><br>With a strong foundation in AI research, cloud infrastructure, and regulatory compliance, SES is shaping the future of AI adoption in Saudi Arabia and the MENA region, aligning with Vision 2030 and global best practices.</p>
+      <a href="#" class="hero-cta-btn">Request Demo</a>
+    </div>
+    <div class="hero-image-animated">
+      <!-- Remove or comment out the image -->
+    </div>
+  </section>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-cta">
+          <!-- Buttons removed as requested -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Expertise & AI Capabilities</h2>
+        <p>Discover how our AI solutions can transform your business</p>
+      </div>
+      <div class="card-grid">
+        <a href="online-check-in-out.html" class="card card-link" aria-label="Online Check-In/Check-Out, click for more details">
+          <div class="card-image">
+            <img src="images/ai-brain.jpg" alt="Online Check-In/Check-Out">
+          </div>
+          <div class="card-content">
+            <h3>Online Check-In/Check-Out</h3>
+            <p>Streamline your hospitality operations with our efficient online check-in and check-out system.</p>
+            <div class="card-arrow">&rarr;</div>
+          </div>
+        </a>
+
+        <a href="dynamic-room-pricing.html" class="card card-link" aria-label="Dynamic Room Pricing, click for more details">
+          <div class="card-image">
+            <img src="images/dynamic-ai.jpg.jpg" alt="Dynamic Room Pricing">
+          </div>
+          <div class="card-content">
+            <h3>Dynamic Room Pricing</h3>
+            <p>Optimize revenue with AI-powered dynamic pricing strategies for your rooms.</p>
+            <div class="card-arrow">&rarr;</div>
+          </div>
+        </a>
+
+        <a href="personalized-recommendations.html" class="card card-link" aria-label="Personalized Recommendations, click for more details">
+          <div class="card-image">
+            <img src="images/predictive-analytics.jpg" alt="Personalized Recommendations">
+          </div>
+          <div class="card-content">
+            <h3>Personalized Recommendations</h3>
+            <p>Enhance guest experience with tailored recommendations for services and amenities.</p>
+            <div class="card-arrow">&rarr;</div>
+          </div>
+        </a>
+
+        <a href="guest-inquiries-support.html" class="card card-link" aria-label="Guest Inquiries and Support, click for more details">
+          <div class="card-image">
+            <img src="images/computer-vision.jpg" alt="Guest Inquiries and Support">
+          </div>
+          <div class="card-content">
+            <h3>Guest Inquiries and Support</h3>
+            <p>24/7 automated support system for handling guest inquiries and requests efficiently.</p>
+            <div class="card-arrow">&rarr;</div>
+          </div>
+        </a>
+
+        <a href="room-management-optimization.html" class="card card-link" aria-label="Room Management Optimization, click for more details">
+          <div class="card-image">
+            <img src="images/smart-recommendations.jpg" alt="Room Management Optimization">
+          </div>
+          <div class="card-content">
+            <h3>Room Management Optimization</h3>
+            <p>Intelligent system for optimizing room allocation, maintenance, and housekeeping schedules.</p>
+            <div class="card-arrow">&rarr;</div>
+          </div>
+        </a>
+
+        <a href="oracle-llm-solutions.html" class="card card-link" aria-label="Oracle Hospitality Limitations and How LLMs Bridge the Gaps, click for more details">
+          <div class="card-image">
+            <img src="images/real-time-processing.jpg" alt="Oracle Hospitality Limitations and How LLMs Bridge the Gaps">
+          </div>
+          <div class="card-content">
+            <h3>Oracle Hospitality Limitations and How LLMs Bridge the Gaps</h3>
+            <p>Discover how Large Language Models enhance Oracle Hospitality systems by addressing their inherent limitations.</p>
+            <div class="card-arrow">&rarr;</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="industry-solutions" class="industry-solutions-tabs" style="background:#f7f8fa;padding:60px 0;">
+    <div class="container" style="max-width:1200px;margin:auto;">
+      <div style="margin-bottom:2.5rem;">
+        <span style="display:inline-block;background:#e0e7ff;color:#2563eb;font-weight:700;padding:0.5rem 1.5rem;border-radius:20px;font-size:1rem;margin-bottom:1.2rem;">AI TAILORED FOR EVERY SECTOR</span>
+        <h2 style="font-size:2.5rem;font-weight:800;color:#18181b;margin:0 0 2.5rem 0;">Industry Solutions</h2>
+      </div>
+      <div class="industry-tabs-nav" role="tablist" aria-label="Industry Sectors" style="display:flex;gap:1rem;margin-bottom:2.5rem;overflow-x:auto;">
+        <button class="industry-tab active" role="tab" aria-selected="true" aria-controls="tab-gov" id="tab-gov-btn">Government & Public Sector</button>
+        <button class="industry-tab" role="tab" aria-selected="false" aria-controls="tab-fin" id="tab-fin-btn">Financial Services & Banking</button>
+        <button class="industry-tab" role="tab" aria-selected="false" aria-controls="tab-health" id="tab-health-btn">Healthcare & Life Sciences</button>
+        <button class="industry-tab" role="tab" aria-selected="false" aria-controls="tab-retail" id="tab-retail-btn">Retail, E-Commerce & Enterprise AI</button>
+        <button class="industry-tab" role="tab" aria-selected="false" aria-controls="tab-energy" id="tab-energy-btn">Energy, Utilities & Smart Cities</button>
+      </div>
+      <div class="industry-tabs-content">
+        <div class="industry-tab-panel active" id="tab-gov" role="tabpanel" aria-labelledby="tab-gov-btn">
+          <div style="display:flex;align-items:flex-start;gap:1.2rem;">
+            <span style="font-size:2.2rem;color:#2563eb;">🏛️</span>
+            <div>
+              <h3 style="font-size:1.3rem;font-weight:700;color:#18181b;margin-bottom:1.2rem;">Government & Public Sector</h3>
+              <ul style="list-style:none;padding:0;margin:0;">
+                <li style="margin-bottom:1rem;"><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> AI-powered policy analysis, fraud detection, and compliance tracking</li>
+                <li style="margin-bottom:1rem;"><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> Smart city infrastructure powered by AI-driven automation</li>
+                <li><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> Secure, on-prem AI solutions for government data sovereignty</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="industry-tab-panel" id="tab-fin" role="tabpanel" aria-labelledby="tab-fin-btn" hidden>
+          <div style="display:flex;align-items:flex-start;gap:1.2rem;">
+            <span style="font-size:2.2rem;color:#2563eb;">💳</span>
+            <div>
+              <h3 style="font-size:1.3rem;font-weight:700;color:#18181b;margin-bottom:1.2rem;">Financial Services & Banking</h3>
+              <ul style="list-style:none;padding:0;margin:0;">
+                <li style="margin-bottom:1rem;"><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> AI-driven fraud detection, risk analysis, and regulatory compliance</li>
+                <li style="margin-bottom:1rem;"><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> Advanced credit scoring and AML (Anti-Money Laundering) monitoring</li>
+                <li><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> Automated financial auditing powered by secure AI models</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="industry-tab-panel" id="tab-health" role="tabpanel" aria-labelledby="tab-health-btn" hidden>
+          <div style="display:flex;align-items:flex-start;gap:1.2rem;">
+            <span style="font-size:2.2rem;color:#2563eb;">🩺</span>
+            <div>
+              <h3 style="font-size:1.3rem;font-weight:700;color:#18181b;margin-bottom:1.2rem;">Healthcare & Life Sciences</h3>
+              <ul style="list-style:none;padding:0;margin:0;">
+                <li style="margin-bottom:1rem;"><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> Secure AI-driven clinical data governance for compliance</li>
+                <li style="margin-bottom:1rem;"><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> AI-assisted medical documentation, diagnostics, and patient security</li>
+                <li><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> Predictive analytics for disease prevention and hospital resource optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="industry-tab-panel" id="tab-retail" role="tabpanel" aria-labelledby="tab-retail-btn" hidden>
+          <div style="display:flex;align-items:flex-start;gap:1.2rem;">
+            <span style="font-size:2.2rem;color:#2563eb;">🛒</span>
+            <div>
+              <h3 style="font-size:1.3rem;font-weight:700;color:#18181b;margin-bottom:1.2rem;">Retail, E-Commerce & Enterprise AI</h3>
+              <ul style="list-style:none;padding:0;margin:0;">
+                <li style="margin-bottom:1rem;"><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> AI document automation and multilingual customer engagement</li>
+                <li><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> AI-powered recommendation engines, customer service chatbots, and demand forecasting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="industry-tab-panel" id="tab-energy" role="tabpanel" aria-labelledby="tab-energy-btn" hidden>
+          <div style="display:flex;align-items:flex-start;gap:1.2rem;">
+            <span style="font-size:2.2rem;color:#2563eb;">🏙️</span>
+            <div>
+              <h3 style="font-size:1.3rem;font-weight:700;color:#18181b;margin-bottom:1.2rem;">Energy, Utilities & Smart Cities</h3>
+              <ul style="list-style:none;padding:0;margin:0;">
+                <li style="margin-bottom:1rem;"><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> AI-driven predictive maintenance and energy efficiency optimization</li>
+                <li><span style="color:#60a5fa;font-size:1.2rem;vertical-align:middle;">✔</span> Sustainability monitoring and risk assessment powered by AI intelligence</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="strategic-advantages" class="strategic-advantages">
+    <div class="container">
+      <div class="section-header">
+        <h2>Strategic Advantages</h2>
+        <p>Key differentiators that set us apart</p>
+      </div>
+
+      <div class="advantages-grid">
+        <div class="advantage-item">
+          <span class="check-icon">✓</span>
+          <div class="advantage-content">
+            <h4>AI Sovereignty & Security</h4>
+            <p>On-prem and cloud AI solutions ensuring full data sovereignty & compliance</p>
+          </div>
+        </div>
+
+        <div class="advantage-item">
+          <span class="check-icon">✓</span>
+          <div class="advantage-content">
+            <h4>Custom AI for Regulated Sectors</h4>
+            <p>AI tailored for government, finance, healthcare, and telecom</p>
+          </div>
+        </div>
+
+        <div class="advantage-item">
+          <span class="check-icon">✓</span>
+          <div class="advantage-content">
+            <h4>End-to-End AI Lifecycle Management</h4>
+            <p>From model development to security auditing & compliance</p>
+          </div>
+        </div>
+
+        <div class="advantage-item">
+          <span class="check-icon">✓</span>
+          <div class="advantage-content">
+            <h4>Global AI Partnerships</h4>
+            <p>Collaborations with leading AI research labs and cloud providers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header" style="text-align:center;">
+        <h2 class="projects-title">Our Projects</h2>
+        <div class="projects-underline"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-title">Case Study 4: Private Cloud for Patient Data (Healthcare)<br><span class="project-org">MNGHA</span></div>
+          <div class="project-desc">"Implemented a private cloud solution that integrates patient data across multiple sources, ensuring secure access and real-time reporting for healthcare providers."</div>
+          <div class="project-impact"><span class="impact-label">Impact:</span> Enhanced patient management, improved data security, and accelerated access to critical patient information.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Case Study 5: Data Lake for Customer Analytics (Telecom)<br><span class="project-org">STC</span></div>
+          <div class="project-desc">"Optimized a data lake to collect and process large volumes of customer data, enabling detailed customer insights and personalized service delivery."</div>
+          <div class="project-impact"><span class="impact-label">Impact:</span> Improved customer experience, tailored services, and data-driven decision-making for increased customer satisfaction.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Case Study 6: Central Data Hub for Integrated City Solutions (Smart City)<br><span class="project-org">NEOM</span></div>
+          <div class="project-desc">"Implemented an advanced data lake within a central data center, driving smart city insights and enterprise transformation to fuel sustainable growth."</div>
+          <div class="project-impact"><span class="impact-label">Impact:</span> Centralized vast data for NEOM, with scalable storage and real-time analytics supporting decisions in urban planning and environmental monitoring.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clients-section">
+    <div class="container">
+      <h2 class="clients-title">Explore our Data &amp; AI clients</h2>
+      <a href="#" class="clients-link">EXPLORE ALL OUR CLIENTS</a>
+      <div class="clients-grid">
+        <div class="client-item">
+          <img src="images/clients/al-rajhi-bank.png.png" alt="Al Rajhi Bank">
+          <div class="client-name">Al Rajhi Bank</div>
+        </div>
+        <div class="client-item">
+          <img src="images/clients/neom.png" alt="NEOM">
+          <div class="client-name">NEOM</div>
+        </div>
+        <div class="client-item">
+          <img src="images/clients/stc.png.png" alt="STC Telecom">
+          <div class="client-name">STC Telecom</div>
+        </div>
+        <div class="client-item">
+          <img src="images/clients/mngha.png" alt="Ministry of National Guard - Health Affairs">
+          <div class="client-name">Ministry of National Guard - Health Affairs</div>
+        </div>
+        <!-- <div class="client-item">
+          <img src="images/clients/al-ghurair.png" alt="Al Ghurair Properties">
+          <div class="client-name">Al Ghurair Properties</div>
+        </div> -->
+        <div class="client-item">
+          <img src="images/clients/bank-aljazira.png" alt="Bank Aljazira">
+          <div class="client-name">Bank Aljazira</div>
+        </div>
+        <div class="client-item">
+          <img src="images/clients/saudi-investment-bank.png" alt="The Saudi Investment Bank">
+          <div class="client-name">The Saudi Investment Bank</div>
+        </div>
+        <div class="client-item">
+          <img src="images/clients/tawuniya.png" alt="Tawuniya">
+          <div class="client-name">Tawuniya</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="section-divider-fade"></div>
+  <section class="contact-section">
+    <div class="container contact-flex">
+      <div class="contact-info">
+        <div class="contact-illustration">
+          <span>🤝</span>
+        </div>
+        <h2 class="contact-title">Let's Connect!</h2>
+        <p class="contact-desc">We love to hear from you. Whether you have a question or want to start a project, our
+          team is ready to help.</p>
+        <div class="contact-details">
+          <div><strong>Email:</strong> info@yourcompany.com</div>
+          <div><strong>Phone:</strong> +966 1234 56789</div>
+        </div>
+      </div>
+      <form class="contact-form-modern">
+        <div class="form-group">
+          <input type="text" name="name" id="name" required placeholder=" ">
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" id="email" required placeholder=" ">
+          <label for="email">Your Email</label>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" rows="4" required placeholder=" "></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="btn-modern">Send ✉️</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer-gradient custom-dark-footer">
+    <div class="container footer-content" style="display:flex;align-items:flex-start;gap:3rem;flex-wrap:wrap;">
+      <div class="footer-col" style="min-width:220px;max-width:320px;flex:0 0 320px;">
+        <div style="display:flex;align-items:center;gap:0.7rem;margin-bottom:1.2rem;">
+          <img src="images/logo.png" alt="SAUDICO ELECTRONIC SYSTEMS" style="height:48px;" />
+          <span style="font-size:1.5rem;font-weight:800;color:#fff;letter-spacing:-1px;">SAUDICO ELECTRONIC SYSTEMS</span>
+        </div>
+        <div style="color:#fff; font-size:1.1rem; font-weight:600; margin-bottom:0.2rem;">SAUDICO ELECTRONIC SYSTEMS</div>
+        <div style="font-size:1rem; color:#b3b8d0; margin-bottom:1.5rem;">السعودي للأشغال الإلكترونية</div>
+        <div class="footer-title" style="color:#fff; margin-bottom:0.7rem;">FOLLOW US</div>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff" fill-opacity="0.08"/><path d="M15.5 8.5h-2V7.5c0-0.4 0.3-0.5 0.5-0.5h1.5V5h-2c-1.7 0-2.5 1.3-2.5 2.5V8.5H8.5V11h2v6h2.5v-6h2l0.5-2.5z" fill="#b3b8d0"/></svg>
+          </a>
+          <a href="#" aria-label="X">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff" fill-opacity="0.08"/><path d="M9.5 9.5l5 5m0-5l-5 5" stroke="#b3b8d0" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff" fill-opacity="0.08"/><rect x="7" y="7" width="10" height="10" rx="3" stroke="#b3b8d0" stroke-width="1.5"/><circle cx="12" cy="12" r="2.5" stroke="#b3b8d0" stroke-width="1.5"/><circle cx="16" cy="8" r="0.7" fill="#b3b8d0"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff" fill-opacity="0.08"/><rect x="7.5" y="10" width="2" height="6" rx="1" fill="#b3b8d0"/><rect x="10.5" y="13" width="2" height="3" rx="1" fill="#b3b8d0"/><rect x="13.5" y="11" width="2" height="5" rx="1" fill="#b3b8d0"/></svg>
+          </a>
+        </div>
+      </div>
+      <div style="display:flex;flex:1;gap:3rem;justify-content:flex-end;flex-wrap:wrap;min-width:220px;">
+        <div class="footer-col">
+          <div class="footer-title">COMPANY</div>
+          <a href="#">About Us</a>
+          <a href="#">Clients</a>
+          <a href="#">Partners</a>
+          <a href="#">Oracle Partnership</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">SOLUTIONS & PRODUCTS</div>
+          <a href="#">Hospitality</a>
+          <a href="#">Food & Beverages</a>
+          <a href="#">Sports & Entertainment</a>
+          <a href="#">Hardware</a>
+          <a href="#">Big Data & AI Solutions</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">SERVICES</div>
+          <a href="#">Training & Education</a>
+          <a href="#">Maintenance & Support</a>
+          <a href="#">IBM Legacy Systems</a>
+          <a href="#">Hospitality Consulting</a>
+        </div>
+      </div>
+    </div>
+    <hr style="border:0; border-top:1px solid #666; margin: 2.5rem 0 1.2rem 0;" />
+    <div class="footer-copyright" style="color:#fff;">
+      © 2025 | Saudico Electronic Systems | All Rights Reserved
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navbar = document.querySelector('.navbar');
+    const showNavbarBtn = document.querySelector('.show-navbar-btn');
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    let hideTimeout;
+
+    function updateNavbarVisibility() {
+      if (window.scrollY === 0) {
+        navbar.style.transform = 'translateY(0)';
+        navbar.style.opacity = '1';
+        showNavbarBtn.style.display = 'none';
+      } else {
+        navbar.style.transform = 'translateY(-100%)';
+        navbar.style.opacity = '0';
+        showNavbarBtn.style.display = 'flex';
+      }
+    }
+
+    function updateBackToTopBtn() {
+      // Show if not at top and near bottom (within 200px of bottom)
+      if (window.scrollY > 100 && (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200)) {
+        backToTopBtn.style.display = 'flex';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    }
+
+    window.addEventListener('scroll', function() {
+      updateNavbarVisibility();
+      updateBackToTopBtn();
+    });
+    updateNavbarVisibility();
+    updateBackToTopBtn();
+
+    showNavbarBtn.addEventListener('mouseenter', () => {
+      clearTimeout(hideTimeout);
+      navbar.style.transform = 'translateY(0)';
+      navbar.style.opacity = '1';
+    });
+    showNavbarBtn.addEventListener('mouseleave', () => {
+      hideTimeout = setTimeout(() => {
+        if (window.scrollY !== 0) {
+          navbar.style.transform = 'translateY(-100%)';
+          navbar.style.opacity = '0';
+        }
+      }, 300);
+    });
+    navbar.addEventListener('mouseenter', () => {
+      clearTimeout(hideTimeout);
+    });
+    navbar.addEventListener('mouseleave', () => {
+      hideTimeout = setTimeout(() => {
+        if (window.scrollY !== 0) {
+          navbar.style.transform = 'translateY(-100%)';
+          navbar.style.opacity = '0';
+        }
+      }, 300);
+    });
+
+    navbar.style.transition = 'transform 0.35s, opacity 0.35s';
+
+    backToTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Industry Solutions Tabs
+    const tabButtons = document.querySelectorAll('.industry-tab');
+    const tabPanels = document.querySelectorAll('.industry-tab-panel');
+
+    tabButtons.forEach((btn, idx) => {
+      btn.addEventListener('mouseenter', function () {
+        // Remove active from all
+        tabButtons.forEach(b => b.classList.remove('active'));
+        tabPanels.forEach(p => { p.classList.remove('active'); p.setAttribute('hidden', ''); });
+        // Add active to hovered
+        btn.classList.add('active');
+        tabPanels[idx].classList.add('active');
+        tabPanels[idx].removeAttribute('hidden');
+      });
+    });
+  });
+  </script>
+</body>
+
+</html>

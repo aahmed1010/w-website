@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oracle Hospitality Limitations and How LLMs Bridge the Gaps | AI Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      min-height: 100vh;
+      padding-top: 70px; /* Adjust to navbar height */
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: rgba(255, 255, 255, 0.18); /* semi-transparent white */
+      backdrop-filter: blur(8px);             /* frosted glass effect */
+      -webkit-backdrop-filter: blur(8px);     /* for Safari */
+      color: #fff;
+      box-shadow: none;
+      border: none;
+      transform: translateY(0);
+      text-shadow: none;
+    }
+    .navbar .nav-links a,
+    .navbar .logo,
+    .navbar .btn-primary.help-desk-btn {
+      color: #fff !important;
+      text-shadow: none;
+    }
+    .navbar .nav-links a:hover {
+      text-decoration: underline;
+    }
+    .nav-links {
+      display: flex !important;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .navbar .nav-links a {
+      color: #fff !important;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.15), 0 0 2px #000;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    /* No logo inversion, use the original logo */
+  </style>
+  <meta name="description" content="Oracle Hospitality Limitations and How LLMs Bridge the Gaps - Discover how AI solutions enhance Oracle Hospitality capabilities.">
+</head>
+
+<body>
+  <button class="show-navbar-btn" aria-label="Show Navigation" style="display:none;">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <rect y="6" width="28" height="3" rx="1.5" fill="#23264a" />
+      <rect y="13" width="28" height="3" rx="1.5" fill="#23264a" />
+      <rect y="20" width="28" height="3" rx="1.5" fill="#23264a" />
+    </svg>
+  </button>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="AI Solutions Logo" class="site-logo" />
+      </a>
+      <div class="nav-links">
+        <a href="#company">Company</a>
+        <a href="#solution">Solution</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <a href="#help-desk" class="btn-primary help-desk-btn">Help Desk</a>
+      <button class="mobile-menu" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <section class="hero-main">
+    <div class="hero-content">
+      <h1>Oracle Hospitality Limitations and How LLMs Bridge the Gaps</h1>
+      <p class="hero-desc">Discover how AI solutions enhance Oracle Hospitality capabilities.</p>
+      <a href="#" class="hero-cta-btn">Request Demo</a>
+    </div>
+    <div class="hero-image-animated">
+      <!-- Remove or comment out the image -->
+    </div>
+  </section>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-cta">
+          <!-- Buttons removed as requested -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Oracle Hospitality Limitations and How LLMs Bridge the Gaps</h2>
+      </div>
+      <div style="overflow-x:auto;margin-bottom:2.2rem;">
+        <table style="width:100%;border-collapse:collapse;font-size:1.08rem;background:#fff;color:#23223b;box-shadow:0 2px 8px rgba(37,99,235,0.07);">
+          <thead style="background:#23264a;color:#fff;">
+            <tr>
+              <th style="padding:0.7rem 1rem;border:1px solid #b3b8d0;">Use Case</th>
+              <th style="padding:0.7rem 1rem;border:1px solid #b3b8d0;">Oracle API</th>
+              <th style="padding:0.7rem 1rem;border:1px solid #b3b8d0;">LLM Enhancement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Online Check-In/Check-Out</td>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Check-In, Check-Out API</td>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Multi-channel integration, automated ID verification.</td>
+            </tr>
+            <tr>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Dynamic Room Pricing</td>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Dynamic Pricing API</td>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Event-based pricing, profit prediction models.</td>
+            </tr>
+            <tr>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Personalized Recommendations</td>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Guest Profile API</td>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">RAG-based recommendations, dynamic cross-selling.</td>
+            </tr>
+            <tr>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Guest Inquiries</td>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Guest Request API</td>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Multi-lingual conversational AI, 24/7 support.</td>
+            </tr>
+            <tr>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Room Management Optimization</td>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">Room Management API</td>
+              <td style="padding:0.7rem 1rem;border:1px solid #e0e7ff;">IoT integration, detailed room metadata management.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="background:#f8fafc;border-radius:12px;padding:1.5rem 1.5rem 1.2rem 1.5rem;box-shadow:0 2px 8px rgba(37,99,235,0.07);margin-bottom:2.2rem;">
+        <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:0.7rem;">Conclusion:</h3>
+        <p style="font-size:1.08rem;margin-bottom:0.7rem;">By integrating the Oracle Hospitality APIs with LLM and AI driven solutions, hotels can achieve:</p>
+        <ul style="font-size:1.08rem;line-height:1.7;margin-bottom:0.7rem;">
+          <li><strong>Higher Guest Engagement:</strong> Multi-channel support and hyper-personalized interactions.</li>
+          <li><strong>Increased Revenue:</strong> Dynamic pricing strategies and tailored upselling opportunities.</li>
+          <li><strong>Operational Efficiency:</strong> Automation of repetitive tasks and real-time insights.</li>
+          <li><strong>Higher Guest Experience:</strong> Ensuring every stay is personalized, seamless, and memorable.</li>
+        </ul>
+        <p style="font-size:1.08rem;">This approach does not only enhance the Oracle APIs based solutions but also creates a future-ready hospitality ecosystem where AI drives value at every touchpoint. LLMs ensure that hotels deliver experiences that are not only efficient but also memorable, reinforcing guest loyalty and profitability.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-gradient custom-dark-footer">
+    <div class="container footer-content" style="display:flex;align-items:flex-start;gap:3rem;flex-wrap:wrap;">
+      <div class="footer-col" style="min-width:220px;max-width:320px;flex:0 0 320px;">
+        <div style="display:flex;align-items:center;gap:0.7rem;margin-bottom:1.2rem;">
+          <img src="images/logo.png" alt="SAUDICO ELECTRONIC SYSTEMS" style="height:48px;" />
+          <span style="font-size:1.5rem;font-weight:800;color:#fff;letter-spacing:-1px;">SAUDICO ELECTRONIC SYSTEMS</span>
+        </div>
+        <div style="color:#fff; font-size:1.1rem; font-weight:600; margin-bottom:0.2rem;">SAUDICO ELECTRONIC SYSTEMS</div>
+        <div style="font-size:1rem; color:#b3b8d0; margin-bottom:1.5rem;">السعودي للأشغال الإلكترونية</div>
+        <div class="footer-title" style="color:#fff; margin-bottom:0.7rem;">FOLLOW US</div>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff" fill-opacity="0.08"/><path d="M15.5 8.5h-2V7.5c0-0.4 0.3-0.5 0.5-0.5h1.5V5h-2c-1.7 0-2.5 1.3-2.5 2.5V8.5H8.5V11h2v6h2.5v-6h2l0.5-2.5z" fill="#b3b8d0"/></svg>
+          </a>
+          <a href="#" aria-label="X">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff" fill-opacity="0.08"/><path d="M9.5 9.5l5 5m0-5l-5 5" stroke="#b3b8d0" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff" fill-opacity="0.08"/><rect x="7" y="7" width="10" height="10" rx="3" stroke="#b3b8d0" stroke-width="1.5"/><circle cx="12" cy="12" r="2.5" stroke="#b3b8d0" stroke-width="1.5"/><circle cx="16" cy="8" r="0.7" fill="#b3b8d0"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff" fill-opacity="0.08"/><rect x="7.5" y="10" width="2" height="6" rx="1" fill="#b3b8d0"/><rect x="10.5" y="13" width="2" height="3" rx="1" fill="#b3b8d0"/><rect x="13.5" y="11" width="2" height="5" rx="1" fill="#b3b8d0"/></svg>
+          </a>
+        </div>
+      </div>
+      <div style="display:flex;flex:1;gap:3rem;justify-content:flex-end;flex-wrap:wrap;min-width:220px;">
+        <div class="footer-col">
+          <div class="footer-title">COMPANY</div>
+          <a href="#">About Us</a>
+          <a href="#">Clients</a>
+          <a href="#">Partners</a>
+          <a href="#">Oracle Partnership</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">SOLUTIONS & PRODUCTS</div>
+          <a href="#">Hospitality</a>
+          <a href="#">Food & Beverages</a>
+          <a href="#">Sports & Entertainment</a>
+          <a href="#">Hardware</a>
+          <a href="#">Big Data & AI Solutions</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">SERVICES</div>
+          <a href="#">Training & Education</a>
+          <a href="#">Maintenance & Support</a>
+          <a href="#">IBM Legacy Systems</a>
+          <a href="#">Hospitality Consulting</a>
+        </div>
+      </div>
+    </div>
+    <hr style="border:0; border-top:1px solid #666; margin: 2.5rem 0 1.2rem 0;" />
+    <div class="footer-copyright" style="color:#fff;">
+      © 2025 | Saudico Electronic Systems | All Rights Reserved
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navbar = document.querySelector('.navbar');
+      const showNavbarBtn = document.querySelector('.show-navbar-btn');
+      let hideTimeout;
+
+      function updateNavbarVisibility() {
+        if (window.scrollY === 0) {
+          navbar.style.transform = 'translateY(0)';
+          navbar.style.opacity = '1';
+          showNavbarBtn.style.display = 'none';
+        } else {
+          navbar.style.transform = 'translateY(-100%)';
+          navbar.style.opacity = '0';
+          showNavbarBtn.style.display = 'flex';
+        }
+      }
+
+      window.addEventListener('scroll', updateNavbarVisibility);
+      updateNavbarVisibility();
+
+      showNavbarBtn.addEventListener('mouseenter', () => {
+        clearTimeout(hideTimeout);
+        navbar.style.transform = 'translateY(0)';
+        navbar.style.opacity = '1';
+      });
+      showNavbarBtn.addEventListener('mouseleave', () => {
+        hideTimeout = setTimeout(() => {
+          if (window.scrollY !== 0) {
+            navbar.style.transform = 'translateY(-100%)';
+            navbar.style.opacity = '0';
+          }
+        }, 300);
+      });
+      navbar.addEventListener('mouseenter', () => {
+        clearTimeout(hideTimeout);
+      });
+      navbar.addEventListener('mouseleave', () => {
+        hideTimeout = setTimeout(() => {
+          if (window.scrollY !== 0) {
+            navbar.style.transform = 'translateY(-100%)';
+            navbar.style.opacity = '0';
+          }
+        }, 300);
+      });
+
+      navbar.style.transition = 'transform 0.35s, opacity 0.35s';
+    });
+  </script>
+</body>
+
+</html> 
